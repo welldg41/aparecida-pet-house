@@ -1,1 +1,115 @@
-<!DOCTYPE html><html><head><title>Aparecida Pet House</title></head><body>Site em construção</body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aparecida Pet House</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    header {
+      background-color: #005baa;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+    }
+    section {
+      padding: 20px;
+    }
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .servico {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .servico img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .servico h3 {
+      background: #fdd835;
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+    .mapa {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="img/logo_nova.png" alt="Logo Aparecida Pet House" />
+  <h1>Aparecida Pet House</h1>
+  <p>Banho e Tosa com carinho e cuidado em Curitiba</p>
+</header>
+
+<section>
+  <h2>Sobre Nós</h2>
+  <p>Na Aparecida Pet House, oferecemos banho e tosa com muito amor e profissionalismo para seu pet. Atendemos com hora marcada e cuidamos de cada animal como se fosse nosso!</p>
+</section>
+
+<section>
+  <h2>Serviços</h2>
+  <div class="servicos">
+    <div class="servico">
+      <img src="img/banho.jpg" alt="Banho em cachorro" />
+      <h3>Banho</h3>
+    </div>
+    <div class="servico">
+      <img src="img/tosa-higienica.jpg" alt="Tosa higiênica" />
+      <h3>Tosa Higiênica</h3>
+    </div>
+    <div class="servico">
+      <img src="img/tosa-maquina.jpg" alt="Tosa na máquina" />
+      <h3>Tosa na Máquina</h3>
+    </div>
+    <div class="servico">
+      <img src="img/tosa-tesoura.jpg" alt="Tosa na tesoura" />
+      <h3>Tosa na Tesoura</h3>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Onde Estamos</h2>
+  <p>Rua Renato Polatti, 3310 - Campo Comprido, Curitiba - PR, 81230-170</p>
+  <iframe class="mapa" src="https://www.google.com/maps?q=Rua+Renato+Polatti,+3310+-+Campo+Comprido,+Curitiba+-+PR,+81230-170&output=embed"></iframe>
+</section>
+
+<!-- Botão flutuante do WhatsApp -->
+<a class="whatsapp-float" href="https://wa.me/5541996585673" target="_blank">
+  <img src="img/whatsapp.png" alt="WhatsApp" />
+</a>
+
+</body>
+</html>
